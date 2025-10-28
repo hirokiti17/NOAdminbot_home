@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>AdminBot ダッシュボード</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h1 class="mb-4">サーバー選択</h1>
+  <ul>
+   {% for guild in guilds %}
+    <li><a href="/server/{{ guild.id }}">{{ guild.name }}</a></li>
+   {% endfor %}
+  </ul>
+
+  </div>
+</body>
+</html>
